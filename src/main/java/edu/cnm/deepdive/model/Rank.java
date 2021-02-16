@@ -22,7 +22,11 @@ public enum Rank {
       this.symbol = symbol;
   }
 
-  public String symbol() {
+  /**
+   * Get the letter/number symbol associated with a card's Rank.
+   * @return
+   */
+  public String getSymbol() {
     return symbol;
   }
 }

@@ -32,7 +32,7 @@ public class Card implements Comparable<Card> {
   }
 
   public String getSymbol() {
-    return String.format("%s%s", rank.symbol(), suit.symbol());
+    return String.format("%s%s", rank.getSymbol(), suit.getSymbol());
   }
 
   @Override
@@ -43,7 +43,7 @@ public class Card implements Comparable<Card> {
 
   /**
    * Sorts by shrink-wrap order (i.e. brand new decks).
-   * @param other
+   * @param other The 2nd Card we are comparing against
    * @return
    */
   @Override
